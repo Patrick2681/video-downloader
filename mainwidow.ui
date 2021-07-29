@@ -647,7 +647,7 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0">
       <item>
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="video_title">
         <property name="palette">
          <palette>
           <active>
@@ -689,7 +689,7 @@
          <string notr="true">font-size: 18px;</string>
         </property>
         <property name="text">
-         <string>Luísa Sonza - INTERE$$EIRA (Lyric Video)</string>
+         <string>Video Downloader</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -703,7 +703,7 @@
       <item>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="QLineEdit" name="lineEdit">
+         <widget class="QLineEdit" name="link_var">
           <property name="palette">
            <palette>
             <active>
@@ -1119,10 +1119,19 @@
             </disabled>
            </palette>
           </property>
+          <property name="inputMask">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string notr="true"/>
+          </property>
+          <property name="placeholderText">
+           <string notr="true">Insira o link aqui!</string>
+          </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_2">
+         <widget class="QLineEdit" name="location_var">
           <property name="palette">
            <palette>
             <active>
@@ -1541,6 +1550,12 @@
           <property name="styleSheet">
            <string notr="true"/>
           </property>
+          <property name="text">
+           <string notr="true"/>
+          </property>
+          <property name="placeholderText">
+           <string notr="true">Local de download</string>
+          </property>
          </widget>
         </item>
        </layout>
@@ -1548,16 +1563,16 @@
       <item>
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="download">
           <property name="text">
-           <string>PushButton</string>
+           <string>Download</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="location">
           <property name="text">
-           <string>PushButton</string>
+           <string>Open</string>
           </property>
          </widget>
         </item>
@@ -1569,6 +1584,12 @@
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Status</string>
         </property>
@@ -1579,6 +1600,12 @@
       </item>
       <item>
        <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>0%</string>
         </property>
@@ -1589,6 +1616,12 @@
       </item>
       <item>
        <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Speed</string>
         </property>
