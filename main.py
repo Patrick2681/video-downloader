@@ -25,7 +25,7 @@ class MainWindow(QMainWindow):
         widgets.download.clicked.connect(self.click)
 
         widgets.location_var.setPlaceholderText(f'{self._homeFolder}/Downloads')
-        widgets.location_var.setText(f'{self._homeFolder}/Downloads')
+        widgets.location_var.setText(f'{self._homeFolder}/Downloads/video downloader')
 
 
     def click(self):
@@ -45,7 +45,7 @@ class MainWindow(QMainWindow):
             link = widgets.link_var.text()
             if link:
                 widgets.link_var.setText(link)
-                downloadFolder = f'{widgets.location.text()}/'
+                downloadFolder = f'{widgets.location_var.text()}/'
                 title = modules.app_functions.AppFunctions.getTitle(link)
                 widgets.video_title.setText(f'{title}')
             downloader = threading.Thread(target=modules.app_functions.AppFunctions.downloadVideo, args=(link, downloadFolder, self), daemon=True)

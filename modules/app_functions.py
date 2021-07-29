@@ -38,8 +38,8 @@ class AppFunctions(MainWindow):
 
     def my_hook(hook):
         if hook['status'] == 'finished':
-            widgets.label_3.setText("finished")
+            widgets.status.setText("finished")
         if hook['status'] == 'downloading':
-            widgets.label_3.setText("downloading")
-            widgets.label_2.setText(hook['_percent_str'])
-            widgets.label.setText(hook['_speed_str'])
+            widgets.status.setText("downloading")
+            widgets.percentage.setText(hook['_percent_str'])
+            widgets.speed.setText(hook['_speed_str'])
