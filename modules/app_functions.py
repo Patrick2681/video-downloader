@@ -36,7 +36,6 @@ class AppFunctions(MainWindow):
             # 'skip_download': 'True',
             'progress_hooks': [AppFunctions.my_hook],
             'noplaylist': 'True',
-            'ffmpeg_location': 'bin/',
             'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
             'outtmpl': f'{downloadFolder}{AppFunctions.getTitle(link)}', }
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:

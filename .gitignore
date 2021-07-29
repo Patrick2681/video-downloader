@@ -29,6 +29,7 @@ MANIFEST
 temp
 .pyc
 .git/
+output
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
