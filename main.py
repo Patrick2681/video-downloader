@@ -1,5 +1,4 @@
 import sys
-
 import modules.app_functions
 import threading
 
@@ -15,7 +14,7 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         self.ui = Ui_Form()
         self.ui.setupUi(self)
-        self._homeFolder = str(Path.home())
+        self._homeFolder = modules.app_functions.AppFunctions.saveLocation(self)
 
         global widgets
         widgets = self.ui
@@ -24,8 +23,8 @@ class MainWindow(QMainWindow):
         widgets.location.clicked.connect(self.click)
         widgets.download.clicked.connect(self.click)
 
-        widgets.location_var.setPlaceholderText(f'{self._homeFolder}/Downloads')
-        widgets.location_var.setText(f'{self._homeFolder}/Downloads/video downloader')
+        widgets.location_var.setPlaceholderText(f'{self._homeFolder}')
+        widgets.location_var.setText(f'{self._homeFolder}')
 
 
     def click(self):

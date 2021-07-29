@@ -4,8 +4,15 @@ import json
 import os, shutil
 
 from main import *
+import pathlib
 
 class AppFunctions(MainWindow):
+
+    def saveLocation(self):
+        if pathlib.Path(f'{pathlib.Path.home()}/Downloads').exists():
+            return str(f'{pathlib.Path.home()}/Downloads/video downloader')
+        else:
+            return str(f'{os.getcwd()}/Downloads')
 
     def getTitle(link):
         ydl_opts = {
