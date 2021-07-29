@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainwidowCJSTaT.ui'
+## Form generated from reading UI file 'mainwidowrnfrXr.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.2
 ##
@@ -301,29 +301,29 @@ class Ui_Form(object):
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.label_3 = QLabel(self.verticalLayoutWidget)
-        self.label_3.setObjectName(u"label_3")
+        self.status = QLabel(self.verticalLayoutWidget)
+        self.status.setObjectName(u"status")
         font1 = QFont()
         font1.setPointSize(18)
         font1.setBold(True)
-        self.label_3.setFont(font1)
-        self.label_3.setAlignment(Qt.AlignCenter)
+        self.status.setFont(font1)
+        self.status.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout.addWidget(self.label_3)
+        self.horizontalLayout.addWidget(self.status)
 
-        self.label_4 = QLabel(self.verticalLayoutWidget)
-        self.label_4.setObjectName(u"label_4")
-        self.label_4.setFont(font1)
-        self.label_4.setAlignment(Qt.AlignCenter)
+        self.percentage = QLabel(self.verticalLayoutWidget)
+        self.percentage.setObjectName(u"percentage")
+        self.percentage.setFont(font1)
+        self.percentage.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout.addWidget(self.label_4)
+        self.horizontalLayout.addWidget(self.percentage)
 
-        self.label_2 = QLabel(self.verticalLayoutWidget)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setFont(font1)
-        self.label_2.setAlignment(Qt.AlignCenter)
+        self.speed = QLabel(self.verticalLayoutWidget)
+        self.speed.setObjectName(u"speed")
+        self.speed.setFont(font1)
+        self.speed.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout.addWidget(self.label_2)
+        self.horizontalLayout.addWidget(self.speed)
 
 
         self.verticalLayout.addLayout(self.horizontalLayout)
@@ -342,8 +342,8 @@ class Ui_Form(object):
         self.video_title.setText(QCoreApplication.translate("Form", u"Video Downloader", None))
         self.download.setText(QCoreApplication.translate("Form", u"Download", None))
         self.location.setText(QCoreApplication.translate("Form", u"Open", None))
-        self.label_3.setText(QCoreApplication.translate("Form", u"Status", None))
-        self.label_4.setText(QCoreApplication.translate("Form", u"0%", None))
-        self.label_2.setText(QCoreApplication.translate("Form", u"Speed", None))
+        self.status.setText(QCoreApplication.translate("Form", u"Status", None))
+        self.percentage.setText(QCoreApplication.translate("Form", u"0%", None))
+        self.speed.setText(QCoreApplication.translate("Form", u"Speed", None))
     # retranslateUi
 
